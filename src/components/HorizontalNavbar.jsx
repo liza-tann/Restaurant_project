@@ -1,7 +1,7 @@
 const HorizontalScrollMenu = () => {
   return (
     <div className="overflow-hidden">
-      <div className="flex items-center overflow-x-auto px-4 py-2 justify-between text-white bg-lightorange">
+      <div className="flex items-center overflow-x-auto px-4 py-2 justify-between text-white bg-orange opacity-70">
         <a href="#" className="px-3 hover:bg-orange rounded-full">Appetizers</a>
         <a href="#" className="px-3 hover:bg-orange rounded-full">Beverages</a>
         <a href="#" className="px-3 hover:bg-orange rounded-full">Liquor</a>
