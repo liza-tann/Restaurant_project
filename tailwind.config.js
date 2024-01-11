@@ -17,14 +17,8 @@ export default {
     },
     colors: {
     orange: '#FFA500',
-    lightorange: '#ffb833',
-    lightorange1: '#FBB917',
-    lightorange2 : '#ffc966',
     white: '#FFFFFF',
-    darkwhite: '#f2f2f2',
-    black: '#000000',
-    lightblack: '#262626',
-    lightblack1: '#737373'
+    black: '#000000'
   },
     extend: {},
   },
