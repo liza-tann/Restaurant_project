@@ -73,10 +73,14 @@ const Nav = () => {
 
   return (
     <nav className="bg-orange flex flex-row lg:flex-row items-center justify-between px-1">
-      <div className="flex items-center space-x-2">
-        <img src={Logo} alt="Restaurant Logo" className="w-10 h-10 p-1" />
-        <h1 className="font-semibold text-white">malevolent-kitchen</h1>
-      </div>
+      <NavLink to='/'>
+        <div className="flex items-center space-x-2">
+          <img src={Logo} alt="Restaurant Logo" className="w-10 h-10 p-1" />
+          <h1 className="font-semibold text-white">malevolent-kitchen</h1>
+        </div>
+      </NavLink>
+
+      
       
       {(windowWidth <= 768 && !menuOpen) && ( // Show UserProfile when screen is smaller than 768 pixels and menu is closed
         <div className="lg:hidden cursor-pointer ml-auto">
