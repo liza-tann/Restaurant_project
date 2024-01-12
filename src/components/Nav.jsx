@@ -51,6 +51,7 @@
 import React, { useState, useEffect } from 'react';
 import Logo from "../assets/logo.png";
 import UserProfile from './userProfile'; // Import your UserProfile component
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -104,10 +105,10 @@ const Nav = () => {
 
       <div className={`lg:flex lg:flex-col lg:items-end space-x-4 text-white lg:pr-auto mt-4 lg:mt-0 ${menuOpen ? 'flex' : 'hidden'}`}>
         <ul className={`lg:flex ${menuOpen ? 'flex' : 'hidden'} justify-end space-x-4 lg:flex-row lg:space-x-10 rounded-lg p-1`}>
-          <li><a href="#" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Home</a></li>
-          <li><a href="#" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >About</a></li>
-          <li><a href="#" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Contact us</a></li>
-          <li><a href="#" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Announcement</a></li>
+          <li><NavLink to="/Home" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Home</NavLink></li>
+          <li><NavLink to="/About" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >About</NavLink></li>
+          <li><NavLink to="/Contact" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Contact us</NavLink></li>
+          <li><NavLink to="/Announcement" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Announcement</NavLink></li>
           {(windowWidth > 768 || menuOpen) && ( // Render UserProfile when the window width is greater than 768 pixels or menu is open
             <li><a href=""><UserProfile /></a></li>
           )}
