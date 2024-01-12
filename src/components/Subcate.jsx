@@ -62,7 +62,7 @@ const Subcate = () => {
 
   return (
     <>
-        <div className="flex items-center justify-center p-3 lg:flex-row">
+        <div className="flex items-center justify-center p-2 lg:flex-row">
           <div className="space-x-4">
             <div className=' lg:block space-x-20'>
               <a href="#" className="text-white hover:bg-orange rounded-full px-1 py-1 text-sm">food</a>

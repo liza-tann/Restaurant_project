@@ -16,7 +16,7 @@ export default {
       '4xl': '2560'
     },
     colors: {
-    orange: '#FFA500',
+    orange: '#C88607',
     white: '#FFFFFF',
     black: '#000000'
   },

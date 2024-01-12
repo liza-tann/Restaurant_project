@@ -112,7 +112,7 @@ const Main = () => {
         </div>
       ) : null}
 
-      <section className={windowWidth < 768 ? 'hidden' : 'grid sm:max-xl md:grid-cols-[120px_minmax(150px,_1fr)] md:text-left sm:max-xl'}>
+      <section className={windowWidth < 768 ? 'hidden' : 'grid sm:max-xl md:grid-cols-[100px_minmax(150px,_1fr)] md:text-left sm:max-xl'}>
         {windowWidth < 768 ? ( // Check for 'sm' breakpoint
           <Sidebarsmall /> // Render SidebarSmall for smaller screens
         ) : (
