@@ -4,6 +4,7 @@ import { MdOutlineLunchDining } from "react-icons/md";
 import { MdOutlineDinnerDining } from "react-icons/md";
 import { LuDessert } from "react-icons/lu";
 import { BiDrink } from "react-icons/bi";
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -12,34 +13,34 @@ const Sidebar = () => {
         <div>
           <ul className='pt-10'>
             <li className="mb-4">
-              <a href="#" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Breakfast" className="hover:text w-40 h-40 ml-12">
               <MdOutlineFreeBreakfast className='text-black opacity-70 w-8 h-8 mx-4'  />
                 Breakfast
-              </a>
+              </NavLink>
             </li>
             <li className="mb-4">
-              <a href="#" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/lunch" className="hover:text w-40 h-40 ml-12">
                 <MdOutlineLunchDining className='text-black opacity-70 w-8 h-8 mx-4' />
                 <p className='mx-3'>lunch</p>
-              </a>
+              </NavLink>
             </li>
             <li className="mb-4">
-              <a href="#" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Dinner" className="hover:text w-40 h-40 ml-12">
                 <MdOutlineDinnerDining className='text-black opacity-70 w-8 h-8 mx-4' />
                 <p className='mx-3'>Dinner</p>
-              </a>
+              </NavLink>
             </li>
             <li className="mb-4">
-              <a href="#" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Dessert" className="hover:text w-40 h-40 ml-12">
                 <LuDessert className='text-black opacity-70 w-8 h-8 mx-4' />
                 <p className='mx-2'>Dessert</p>
-              </a>
+              </NavLink>
             </li>
             <li className="mb-4">
-              <a href="#" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Beverages" className="hover:text w-40 h-40 ml-12">
                 <BiDrink className='text-black opacity-70 w-8 h-8 mx-4'  />
                 Beverages
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
