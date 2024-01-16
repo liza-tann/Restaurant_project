@@ -10,7 +10,7 @@ const Food = () => {
         {foods.map((item, index) => (
           <div key={index} className='shadow-lg hover:scale-105 duration-300 relative'>
             <img src={item.image} alt={item.name} className='w-full h-[200px] object-cover' />
-            <div className=' px-2 py-2 absolute bottom-0 left-0 right-0 bg-black/50 h-3/10'>
+            <div className=' px-2 py-2 absolute bottom-0 left-0 right-0 bg-black/65 h-3/10'>
               <div className="truncate overflow-hidden text-overflow-ellipsis line-clamp-1">
                 <p className='font-bold text-white opacity-80'>{item.name}</p>
               </div>

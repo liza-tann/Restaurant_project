@@ -112,7 +112,7 @@ const Main = () => {
         </div>
       ) : null}
 
-      <section className={windowWidth < 768 ? 'hidden' : 'grid sm:max-xl md:grid-cols-[120px_minmax(150px,_1fr)] md:text-left sm:max-xl'}>
+      <section className={windowWidth < 768 ? 'hidden' : 'grid sm:max-xl md:grid-cols-[100px_minmax(150px,_1fr)] md:text-left sm:max-xl'}>
         {windowWidth < 768 ? ( // Check for 'sm' breakpoint
           <Sidebarsmall /> // Render SidebarSmall for smaller screens
         ) : (
@@ -121,7 +121,7 @@ const Main = () => {
 
         <div className='grid grid-cols-2 sm:max-xl md:grid-rows-2 sm:max-xl'>
           {windowWidth >= 768 && ( // Render Subcate only when the screen is larger than or equal to 768 pixels
-            <div className='bg-orange opacity-70 col-span-2 row-span-2'>
+            <div className='bg-light col-span-2 row-span-2'>
               <Subcate />
             </div>
           )}

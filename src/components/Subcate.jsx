@@ -65,11 +65,11 @@ const Subcate = () => {
         <div className="flex items-center justify-center p-2 lg:flex-row">
           <div className="space-x-4">
             <div className=' lg:block space-x-20'>
-              <a href="#" className="text-white hover:bg-orange rounded-full px-1 py-1 text-sm">food</a>
-              <a href="#" className="text-white hover:bg-orange rounded-full px-1 py-1 text-sm">drink</a>
-              <a href="#" className="text-white hover:bg-orange rounded-full px-1 py-1 text-sm">alcohol</a>
-              <a href="#" className="text-white hover:bg-orange rounded-full px-1 py-1 text-sm">snack</a>
-              <a href="#" className="text-white hover:bg-orange rounded-full px-1 py-1 text-sm">dessert</a>
+              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">food</a>
+              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">drink</a>
+              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">alcohol</a>
+              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">snack</a>
+              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">dessert</a>
             </div>
           </div>     
         </div>

@@ -49,7 +49,7 @@
 // export default Nav;
 
 import React, { useState, useEffect } from 'react';
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo02.png";
 import UserProfile from './userProfile'; // Import your UserProfile component
 import { NavLink } from 'react-router-dom';
 import { Drawer, List, ListItem, ListItemText } from '@mui/material';
@@ -73,7 +73,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-orange flex flex-row lg:flex-row items-center justify-between px-1">
+    <nav className="bg-main flex flex-row lg:flex-row items-center justify-between px-1">
       <NavLink to='/'>
         <div className="flex items-center space-x-2">
           <img src={Logo} alt="Restaurant Logo" className="w-10 h-10 p-1" />
@@ -121,10 +121,10 @@ const Nav = () => {
       {(windowWidth >= 1024) && (
         <div className={`lg:flex lg:flex-col lg:items-end space-x-4 text-white lg:pr-auto mt-4 lg:mt-0 ${menuOpen ? 'flex' : 'hidden'}`}>
         <ul className={`lg:flex ${menuOpen ? 'flex' : 'hidden'} justify-end space-x-4 lg:flex-row lg:space-x-10 rounded-lg p-1`}>
-          <li><NavLink to="/Home" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Home</NavLink></li>
-          <li><NavLink to="/About" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >About</NavLink></li>
-          <li><NavLink to="/Contact" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Contact us</NavLink></li>
-          <li><NavLink to="/Announcement" className='hover:bg-lightorange rounded-full px-1 py-1 text-sm' >Announcement</NavLink></li>
+          <li><NavLink to="/Home" className='hover:bg-light rounded-full px-1 py-1 text-sm' >Home</NavLink></li>
+          <li><NavLink to="/About" className='hover:bg-light rounded-full px-1 py-1 text-sm' >About</NavLink></li>
+          <li><NavLink to="/Contact" className='hover:bg-light rounded-full px-1 py-1 text-sm' >Contact us</NavLink></li>
+          <li><NavLink to="/Announcement" className='hover:bg-light rounded-full px-1 py-1 text-sm' >Announcement</NavLink></li>
           {(windowWidth > 768 || menuOpen) && ( // Render UserProfile when the window width is greater than 768 pixels or menu is open
             <li><a href=""><UserProfile /></a></li>
           )}

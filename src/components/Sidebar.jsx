@@ -8,36 +8,36 @@ import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="flex bg-orange opacity-70">
-      <div className="flex text-white p-3">
+    <div className="flex bg-light">
+      <div className="flex text-black p-3 pt-4">
         <div>
-          <ul className='pt-10'>
+          <ul className='pt-1'>
             <li className="mb-4">
-              <NavLink to="/Breakfast" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Breakfast" className="hover:text-main w-40 h-40 ml-12">
               <MdOutlineFreeBreakfast className='text-black opacity-70 w-8 h-8 mx-4'  />
                 Breakfast
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/lunch" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/lunch" className="hover:text-main w-40 h-40 ml-12">
                 <MdOutlineLunchDining className='text-black opacity-70 w-8 h-8 mx-4' />
                 <p className='mx-3'>lunch</p>
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/Dinner" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Dinner" className="hover:text-main w-40 h-40 ml-12">
                 <MdOutlineDinnerDining className='text-black opacity-70 w-8 h-8 mx-4' />
                 <p className='mx-3'>Dinner</p>
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/Dessert" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Dessert" className="hover:text-main w-40 h-40 ml-12">
                 <LuDessert className='text-black opacity-70 w-8 h-8 mx-4' />
                 <p className='mx-2'>Dessert</p>
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/Beverages" className="hover:text w-40 h-40 ml-12">
+              <NavLink to="/Beverages" className="hover:text-main w-40 h-40 ml-12">
                 <BiDrink className='text-black opacity-70 w-8 h-8 mx-4'  />
                 Beverages
               </NavLink>
