@@ -173,37 +173,35 @@ const Nav = () => {
         to="/Breakfast"
         className="flex items-center hover:text-main"
       >
-        <MdOutlineFreeBreakfast className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <MdOutlineFreeBreakfast className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
         <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Breakfast</p>
       </NavLink>
     </ListItem>
     <ListItem button>
       <NavLink to="/lunch" className="flex items-center hover:text-main">
-        <MdOutlineLunchDining className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <MdOutlineLunchDining className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
         <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Lunch</p>
       </NavLink>
     </ListItem>
     <ListItem button>
       <NavLink to="/Dinner" className="flex items-center hover:text-main">
-        <MdOutlineDinnerDining className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <MdOutlineDinnerDining className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
         <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Dinner</p>
       </NavLink>
     </ListItem>
     <ListItem button>
       <NavLink
         to="/Dessert"
-        className="flex items-center hover:text-main"
-      >
-        <LuDessert className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        className="flex items-center hover:text-main">
+        <LuDessert className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
         <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Dessert</p>
       </NavLink>
     </ListItem>
     <ListItem button>
       <NavLink
         to="/Beverages"
-        className="flex items-center hover:text-main"
-      >
-        <BiDrink className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        className="flex items-center hover:text-main">
+        <BiDrink className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
         <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Beverages</p>
       </NavLink>
     </ListItem>
