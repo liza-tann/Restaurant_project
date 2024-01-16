@@ -114,7 +114,7 @@ const Nav = () => {
 
       {windowWidth > 768 && (
         <div
-          className={`lg:flex lg:flex-col lg:items-end space-x-4 text-white lg:pr-auto mt-4 lg:mt-0 ${
+          className={`lg:flex lg:flex-col lg:items-end space-x-4 text-white lg:pr-auto lg:mt-0 ${
             menuOpen ? "flex" : "hidden"
           }`}
         >
@@ -156,7 +156,7 @@ const Nav = () => {
               </NavLink>
             </li>
             {(windowWidth > 768 || menuOpen) && (
-              <li>
+              <li className="px-4">
                 <a href="">
                   <UserProfile />
                 </a>
