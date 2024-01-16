@@ -5,17 +5,17 @@ const Food = () => {
   const [foods, setFoods] = useState(data)
 
   return (
-    <div className='max-w-[2560px] m-auto px-6 py-6'>
+    <div className='text-14 font-400 max-w-[2560px] m-auto px-6 py-6'>
       <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7 gap-6'>
         {foods.map((item, index) => (
           <div key={index} className='shadow-lg hover:scale-105 duration-300 relative'>
             <img src={item.image} alt={item.name} className='w-full h-[200px] object-cover' />
             <div className=' px-2 py-2 absolute bottom-0 left-0 right-0 bg-black/65 h-3/10'>
               <div className="truncate overflow-hidden text-overflow-ellipsis line-clamp-1">
-                <p className='font-bold text-white opacity-80'>{item.name}</p>
+                <p className='font-bold text-white'>{item.name}</p>
               </div>
               <p>
-                <span className=' text-white opacity-80'>{item.price}</span>
+                <span className=' text-white'>{item.price}</span>
               </p>
             </div>
           </div>

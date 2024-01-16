@@ -21,7 +21,14 @@ export default {
     white: '#FFFFFF',
     black: '#000000'
   },
-    extend: {},
+    extend: {
+      fontSize: {
+        '14': '14px',
+      },
+      fontWeight: {
+        '400': 400,
+      },
+    },
   },
   plugins: [],
 }

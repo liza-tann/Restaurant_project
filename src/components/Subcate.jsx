@@ -62,14 +62,13 @@ const Subcate = () => {
 
   return (
     <>
-        <div className="flex items-center justify-center p-2 lg:flex-row">
+        <div className="text-14 font-400 flex items-center justify-center p-2 lg:flex-row">
           <div className="space-x-4">
             <div className=' lg:block space-x-20'>
-              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">food</a>
-              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">drink</a>
-              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">alcohol</a>
-              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">snack</a>
-              <a href="#" className="text-black hover:text-main rounded-full px-1 py-1 text-sm">dessert</a>
+              <a href="#" className="text-black hover:bg-main px-2 rounded-full px-1 py-1 text-sm">drink</a>
+              <a href="#" className="text-black hover:bg-main px-2 rounded-full px-1 py-1 text-sm">alcohol</a>
+              <a href="#" className="text-black hover:bg-main px-2 rounded-full px-1 py-1 text-sm">snack</a>
+              <a href="#" className="text-black hover:bg-main px-2 rounded-full px-1 py-1 text-sm">dessert</a>
             </div>
           </div>     
         </div>
