@@ -17,6 +17,7 @@ export default {
     },
     colors: {
     main: '#07B35F',
+    dark: '#197548',
     light: '#F4F9F5',
     white: '#FFFFFF',
     black: '#000000'

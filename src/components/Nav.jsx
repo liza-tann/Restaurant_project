@@ -79,7 +79,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-main flex flex-row lg:flex-row items-center justify-between px-1">
+    <nav className="bg-main text-14 font-400 flex flex-row lg:flex-row items-center justify-between px-1">
       {windowWidth <= 768 && (
         <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
           <svg
@@ -126,7 +126,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/Home"
-                className="hover:bg-light rounded-full px-1 py-1 text-sm"
+                className="hover:text-light rounded-full px-1 py-1 text-sm"
               >
                 Home
               </NavLink>
@@ -134,7 +134,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/About"
-                className="hover:bg-light rounded-full px-1 py-1 text-sm"
+                className="hover:text-light rounded-full px-1 py-1 text-sm"
               >
                 About
               </NavLink>
@@ -150,7 +150,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/Announcement"
-                className="hover:bg-light rounded-full px-1 py-1 text-sm"
+                className="hover:text-light rounded-full px-1 py-1 text-sm"
               >
                 Announcement
               </NavLink>
@@ -166,65 +166,50 @@ const Nav = () => {
         </div>
       )}
 
-      <Drawer anchor="left" open={menuOpen} onClose={toggleMenu}>
-        <List className="grid grid-rows-1">
-          <ListItem button>
-            <NavLink
-              to="/Breakfast"
-              className="flex items-center hover:text-main"
-            >
-              <MdOutlineFreeBreakfast className="text-black opacity-70 w-8 h-8 mx-4" />
-              <p className="mx-3">Breakfast</p>
-            </NavLink>
-          </ListItem>
-          <ListItem button>
-            <NavLink to="/lunch" className="flex items-center hover:text-main">
-              <MdOutlineLunchDining className="text-black opacity-70 w-8 h-8 mx-4" />
-              <p className="mx-3">Lunch</p>
-            </NavLink>
-          </ListItem>
-          <ListItem button>
-            <NavLink to="/Dinner" className="flex items-center hover:text-main">
-              <MdOutlineDinnerDining className="text-black opacity-70 w-8 h-8 mx-4" />
-              <p className="mx-3">Dinner</p>
-            </NavLink>
-          </ListItem>
-          <ListItem button>
-            <NavLink
-              to="/Dessert"
-              className="flex items-center hover:text-main"
-            >
-              <LuDessert className="text-black opacity-70 w-8 h-8 mx-4" />
-              <p className="mx-2">Dessert</p>
-            </NavLink>
-          </ListItem>
-          <ListItem button>
-            <NavLink
-              to="/Beverages"
-              className="flex items-center hover:text-main"
-            >
-              <BiDrink className="text-black opacity-70 w-8 h-8 mx-4" />
-              <p className="mx-3">Beverages</p>
-            </NavLink>
-          </ListItem>
+<Drawer anchor="left" open={menuOpen} onClose={toggleMenu}>
+  <List className="grid grid-rows-1">
+    <ListItem button>
+      <NavLink
+        to="/Breakfast"
+        className="flex items-center hover:text-main"
+      >
+        <MdOutlineFreeBreakfast className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Breakfast</p>
+      </NavLink>
+    </ListItem>
+    <ListItem button>
+      <NavLink to="/lunch" className="flex items-center hover:text-main">
+        <MdOutlineLunchDining className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Lunch</p>
+      </NavLink>
+    </ListItem>
+    <ListItem button>
+      <NavLink to="/Dinner" className="flex items-center hover:text-main">
+        <MdOutlineDinnerDining className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Dinner</p>
+      </NavLink>
+    </ListItem>
+    <ListItem button>
+      <NavLink
+        to="/Dessert"
+        className="flex items-center hover:text-main"
+      >
+        <LuDessert className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Dessert</p>
+      </NavLink>
+    </ListItem>
+    <ListItem button>
+      <NavLink
+        to="/Beverages"
+        className="flex items-center hover:text-main"
+      >
+        <BiDrink className="text-black opacity-70 w-8 h-8 mx-4 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Beverages</p>
+      </NavLink>
+    </ListItem>
+  </List>
+</Drawer>
 
-          {/* <ListItem button>
-            <ListItemText primary={<NavLink to="/Home">Home</NavLink>} />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary={<NavLink to="/About">About</NavLink>} />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary={<NavLink to="/Contact">Contact us</NavLink>} />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary={<NavLink to="/Announcement">Announcement</NavLink>} />
-          </ListItem>
-          <ListItem>
-            <UserProfile />
-          </ListItem> */}
-        </List>
-      </Drawer>
     </nav>
   );
 };
