@@ -2,6 +2,7 @@ import React from 'react';
 import { MdOutlineFreeBreakfast } from "react-icons/md";
 import { MdOutlineLunchDining } from "react-icons/md";
 import { MdOutlineDinnerDining } from "react-icons/md";
+import { BiFoodMenu } from "react-icons/bi";
 import { LuDessert } from "react-icons/lu";
 import { BiDrink } from "react-icons/bi";
 import { NavLink } from 'react-router-dom';
@@ -41,6 +42,13 @@ const Sidebar = () => {
               <NavLink to="/Beverages" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
                 <BiDrink className='hover:text-main transition duration-300 ease-in-out transform hover:text-main hover:scale-110 text-black opacity-70 w-8 h-8 mx-4'  />
                 Beverages
+              </NavLink>
+            </li>
+
+            <li className="mb-4">
+              <NavLink to="/" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
+                <BiFoodMenu className='hover:text-main transition duration-300 ease-in-out transform hover:text-main hover:scale-110 text-black opacity-70 w-8 h-8 mx-4' />
+                <p className='mx-1'>All Menu</p>
               </NavLink>
             </li>
           </ul>
