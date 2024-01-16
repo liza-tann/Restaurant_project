@@ -13,31 +13,31 @@ const Sidebar = () => {
         <div>
           <ul className='pt-1'>
             <li className="mb-4">
-              <NavLink to="/Breakfast" className="hover:text-main w-40 h-40 ml-12">
+              <NavLink to="/Breakfast" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
               <MdOutlineFreeBreakfast className='text-black w-6 h-6 mx-4'  />
                 Breakfast
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/lunch" className="hover:text-main w-40 h-40 ml-12">
+              <NavLink to="/lunch" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
                 <MdOutlineLunchDining className='text-black w-6 h-6 mx-4' />
                 <p className='mx-3'>lunch</p>
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/Dinner" className="hover:text-main w-40 h-40 ml-12">
+              <NavLink to="/Dinner" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
                 <MdOutlineDinnerDining className='text-black w-6 h-6 mx-4' />
                 <p className='mx-3'>Dinner</p>
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/Dessert" className="hover:text-main w-40 h-40 ml-12">
+              <NavLink to="/Dessert" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
                 <LuDessert className='text-black w-6 h-6 mx-4' />
                 <p className='mx-2'>Dessert</p>
               </NavLink>
             </li>
             <li className="mb-4">
-              <NavLink to="/Beverages" className="hover:text-main w-40 h-40 ml-12">
+              <NavLink to="/Beverages" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
                 <BiDrink className='text-black w-6 h-6 mx-4'  />
                 Beverages
               </NavLink>
