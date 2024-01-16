@@ -52,6 +52,7 @@ import Logo from "../assets/logo02.png";
 import UserProfile from "./userProfile"; // Import your UserProfile component
 import { NavLink } from "react-router-dom";
 import { BiBell } from "react-icons/bi";
+import { BiFoodMenu } from "react-icons/bi";
 import { MdOutlineFreeBreakfast } from "react-icons/md";
 import { MdOutlineLunchDining } from "react-icons/md";
 import { MdOutlineDinnerDining } from "react-icons/md";
@@ -205,9 +206,16 @@ const Nav = () => {
         <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Beverages</p>
       </NavLink>
     </ListItem>
+    <ListItem button>
+      <NavLink
+        to="/Beverages"
+        className="flex items-center hover:text-main">
+        <BiFoodMenu className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">All Menu</p>
+      </NavLink>
+    </ListItem>
   </List>
 </Drawer>
-
     </nav>
   );
 };
