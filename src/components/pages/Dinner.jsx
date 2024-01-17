@@ -1,16 +1,13 @@
 import React from 'react'
-import Sidebar from '../Sidebar'
-import Nav from '../Nav'
-import Subcate from '../Subcate'
-const Dinner = () => {
+
+import Dessert from '../Dessert'
+
+const Desserts = () => {
   return (
     <div>
-        <Nav />
-        <Sidebar />
-        <Subcate />
-      <p>Dinner</p>
+        <Dessert/>
     </div>
   )
 }
 
-export default Dinner
+export default Desserts
