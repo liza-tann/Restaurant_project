@@ -207,6 +207,23 @@ export const data = [
       'https://images.unsplash.com/photo-1546793665-c74683f339c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2FsYWQlMjBjZWFzYXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60',
     price: '$$$',
   },
+
+  {
+    id: 27,
+    name: 'Toast-Sunny side up',
+    category: 'Breakfast',
+    image:
+      'https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    price: '$',
+  },
+  {
+    id: 28,
+    name: 'Croissant',
+    category: 'Breakfast',
+    image: 
+    'https://plus.unsplash.com/premium_photo-1676929360029-65fadc001ff7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YnJlYWtmYXN0fGVufDB8fDB8fHww',
+    price: '$' ,
+  }
 ];
 
 export const categories = [
@@ -258,4 +275,35 @@ export const categories = [
     image:
       'https://duyt4h9nfnj50.cloudfront.net/new_search_home_eats_icon/Placeholder_Plates@3x.png',
   },
+  {
+    id: 9,
+    name: 'Breakfast',
+    image: 
+      'https://cdn-icons-png.flaticon.com/512/4825/4825292.png',
+  },
+  {
+    id: 10,
+    name: 'Lunch',
+    image: 
+      'https://cdn-icons-png.flaticon.com/128/9844/9844852.png',
+  },
+  {
+    id: 11,
+    name: 'Dinner',
+    image: 
+      'https://cdn-icons-png.flaticon.com/128/1046/1046874.png',
+  },
+  {
+    id: 12,
+    name: 'Dessert',
+    image: 
+      'https://cdn-icons-png.flaticon.com/128/3173/3173469.png',
+  },
+  {
+    id: 13,
+    name: 'Beverages',
+    image: 
+      'https://cdn-icons-png.flaticon.com/128/4682/4682208.png',
+  }
+
 ];
