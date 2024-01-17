@@ -1,13 +1,12 @@
 import React from 'react'
+import Dinner from '../Dinner'
 
-import Dessert from '../Dessert'
-
-const Desserts = () => {
+const Dinners = () => {
   return (
     <div>
-        <Dessert/>
+      <Dinner/>
     </div>
   )
 }
 
-export default Desserts
+export default Dinners
