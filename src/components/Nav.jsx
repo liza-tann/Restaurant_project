@@ -127,7 +127,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/Home"
-                className="hover:text-light rounded-full px-1 py-1 text-sm"
+                className="hover:text-light  px-1 py-1 text-sm"
               >
                 Home
               </NavLink>
@@ -135,7 +135,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/About"
-                className="hover:text-light rounded-full px-1 py-1 text-sm"
+                className="hover:text-light px-1 py-1 text-sm"
               >
                 About
               </NavLink>
@@ -143,7 +143,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/Contact"
-                className="hover:bg-light rounded-full px-1 py-1 text-sm"
+                className="hover:text-light px-1 py-1 text-sm"
               >
                 Contact us
               </NavLink>
@@ -151,7 +151,7 @@ const Nav = () => {
             <li>
               <NavLink
                 to="/Announcement"
-                className="hover:text-light rounded-full px-1 py-1 text-sm"
+                className="hover:text-light px-1 py-1 text-sm"
               >
                 Announcement
               </NavLink>
@@ -169,6 +169,14 @@ const Nav = () => {
 
 <Drawer anchor="left" open={menuOpen} onClose={toggleMenu}>
   <List className="grid grid-rows-1">
+  <ListItem button>
+      <NavLink
+        to="/"
+        className="flex items-center hover:text-main">
+        <BiFoodMenu className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
+        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">All Menu</p>
+      </NavLink>
+    </ListItem>
     <ListItem button>
       <NavLink
         to="/Breakfast"
@@ -206,14 +214,6 @@ const Nav = () => {
         <p className="mx-3 transition duration-300 ease-in-out hover:text-main">Beverages</p>
       </NavLink>
     </ListItem>
-    <ListItem button>
-      <NavLink
-        to="/Beverages"
-        className="flex items-center hover:text-main">
-        <BiFoodMenu className="text-black opacity-70 w-8 h-8 transition duration-300 ease-in-out transform hover:text-main hover:scale-110" />
-        <p className="mx-3 transition duration-300 ease-in-out hover:text-main">All Menu</p>
-      </NavLink>
-    </ListItem>
   </List>
 </Drawer>
     </nav>
@@ -221,3 +221,4 @@ const Nav = () => {
 };
 
 export default Nav;
+
