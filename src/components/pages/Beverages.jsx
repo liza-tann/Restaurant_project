@@ -1,16 +1,15 @@
 import React from 'react'
-import Sidebar from '../Sidebar'
-import Nav from '../Nav'
-import Subcate from '../Subcate'
-const Beverages = () => {
+
+import Beverages from '../Beverages'
+
+const Beverage = () => {
   return (
     <div>
-        <Nav />
-        <Sidebar />
-        <Subcate />
-      <p>Beverage</p>
+
+        <Beverages/>
+      
     </div>
   )
 }
 
-export default Beverages
+export default Beverage
