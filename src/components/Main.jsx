@@ -85,6 +85,7 @@ import Sidebar from './Sidebar';
 import Sidebarsmall from './Sidebarsmall'; // Import the sidebar for smaller screens
 import Subcate from "./Subcate";
 import HorizontalScrollMenu from './HorizontalNavbar';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
