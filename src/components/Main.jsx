@@ -108,7 +108,7 @@ const Main = () => {
       {windowWidth <= 768 ? (
         <div>
           <HorizontalScrollMenu />
-          <Food/>
+          
         </div>
       ) : null}
 
@@ -126,7 +126,7 @@ const Main = () => {
             </div>
           )}
           <div className='col-span-2 mx-0'>
-            <Food />
+            <Outlet />
           </div>
         </div>
       </section>
