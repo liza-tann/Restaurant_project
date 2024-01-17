@@ -26,10 +26,10 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="mb-4">
-              <NavLink to="/Dinner" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
+              <Link to="/Dinner" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
                 <MdOutlineDinnerDining className='hover:text-main transition duration-300 ease-in-out transform hover:text-main hover:scale-110 text-black opacity-70 w-8 h-8 mx-4' />
                 <p className='mx-3'>Dinner</p>
-              </NavLink>
+              </Link>
             </li>
             <li className="mb-4">
               <Link to="/Dessert" className="hover:text-main hover:font-bold w-40 h-40 ml-12">
