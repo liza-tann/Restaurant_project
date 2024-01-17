@@ -1,5 +1,6 @@
-import Main from "./components/Main"
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import React from "react";
+import Main from "./components/Main";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
@@ -9,29 +10,27 @@ import Lunch from "./components/pages/Lunch";
 import Dinner from "./components/pages/Dinner";
 import Dessert from "./components/pages/Dessert";
 import Beverages from "./components/pages/Beverages";
-function App() {
 
+function App() {
   return (
-    <Router> {/* Wrap the app in BrowserRouter */}
+    <Router>
       <div className="App">
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Main />}>
+            <Route path="breakfast" element={<Breakfast />} />
+            <Route path="lunch" element={<Lunch />} />
+            <Route path="dinner" element={<Dinner />} />
+            <Route path="dessert" element={<Dessert />} />
+            <Route path="beverages" element={<Beverages />} />
+          </Route>
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Announcement" element={<Announcement />} />
-          <Route path="/Breakfast" element={<Breakfast />} />
-          <Route path="/Lunch" element={<Lunch />} />
-          <Route path="/Dinner" element={<Dinner />} />
-          <Route path="/Dessert" element={<Dessert />} />
-          <Route path="/Beverages" element={<Beverages />} />
-          
         </Routes>
-        {/* <Main /> Render Main component outside of routes */}
       </div>
     </Router>
-
-  )
+  );
 }
 
-export default App
+export default App;
